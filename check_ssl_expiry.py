@@ -30,5 +30,5 @@ domains = domains_str.split(',')
 
 for domain in domains:
     remaining_days = check_ssl_expiry(domain)
-    if remaining_days is not None and remaining_days <= 30:
+    if remaining_days is not None and remaining_days >= 30:
         send_slack_alert(domain, remaining_days)
