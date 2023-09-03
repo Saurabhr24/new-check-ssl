@@ -2,7 +2,7 @@ name: Check SSL Expiry
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily schedule at midnight
+###    - cron: '0 0 * * *'  # Daily schedule at midnight
   workflow_dispatch:   # Manual trigger
 
 jobs:
